@@ -1,7 +1,7 @@
 [profile.default]
 src = "contracts"
 out = "out"
-libs = ["../../dependencies", "../../contracts/src"]
+libs = ["../../contracts/dependencies", "../../contracts/src"]
 test = "tests"
 ffi = true
 
