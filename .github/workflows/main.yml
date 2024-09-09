@@ -44,7 +44,6 @@ jobs:
         with:
           # Full history is required by license-check.py
           fetch-depth: 0
-          submodules: recursive
       - uses: risc0/risc0/.github/actions/rustup@release-1.0
       - name: Install cargo-sort
         uses: risc0/cargo-install@b9307573043522ab0d3e3be64a51763b765b52a4
@@ -113,7 +112,11 @@ jobs:
           name: cargo-timings-${{ matrix.os }}-${{ matrix.device }}
           path: target/cargo-timings/
           retention-days: 5
-      - run: forge test -vvv
+      - name: install dependencies
+        run: forge soldeer install
+        working-directory: contracts
+      - name: test contracts
+        run: forge test -vvv
         working-directory: contracts
       - run: sccache --show-stats
 
@@ -131,8 +134,6 @@ jobs:
       # This is a workaround from: https://github.com/actions/checkout/issues/590#issuecomment-970586842
       - run: "git checkout -f $(git -c user.name=x -c user.email=x@x commit-tree $(git hash-object -t tree /dev/null) < /dev/null) || :"
       - uses: actions/checkout@v4
-        with:
-          submodules: recursive
       - if: matrix.feature == 'cuda'
         uses: risc0/risc0/.github/actions/cuda@release-1.0
       - uses: risc0/risc0/.github/actions/rustup@release-1.0
