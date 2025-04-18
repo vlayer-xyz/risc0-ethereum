@@ -20,7 +20,7 @@ risc0-steel = { version = "2.0.0-rc.5", default-features = false, path = "crates
 
 # risc0 monorepo dependencies.
 risc0-binfmt = { version = "2.0", default-features = false }
-risc0-build = { version = "2.0", default-features = false }
+risc0-build = { git = "https://github.com/kubkon/risc0-build-patched.git", rev = "e584614d1cdaee1cb0d8acf43165b96628e6eca3", default-features = false }
 risc0-zkp = { version = "2.0", default-features = false }
 risc0-zkvm = { version = "2.0", default-features = false }
 
