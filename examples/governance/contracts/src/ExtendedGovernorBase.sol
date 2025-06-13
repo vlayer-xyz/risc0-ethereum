@@ -16,7 +16,7 @@
 
 pragma solidity ^0.8.9;
 
-import {Governor, IGovernor} from "openzeppelin/contracts/governance/Governor.sol";
+import {Governor, IGovernor} from "openzeppelin-contracts/governance/Governor.sol";
 
 abstract contract ExtendedGovernorBase is IGovernor, Governor {
     // Copied from the Governor contract.

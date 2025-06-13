@@ -16,12 +16,12 @@
 
 pragma solidity ^0.8.9;
 
-import {Governor, IGovernor} from "openzeppelin/contracts/governance/Governor.sol";
-import {GovernorSettings} from "openzeppelin/contracts/governance/extensions/GovernorSettings.sol";
-import {GovernorCountingSimple} from "openzeppelin/contracts/governance/extensions/GovernorCountingSimple.sol";
-import {GovernorVotes, IVotes} from "openzeppelin/contracts/governance/extensions/GovernorVotes.sol";
-import {GovernorVotesQuorumFraction} from "openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
-import {IERC6372} from "openzeppelin/contracts/interfaces/IERC6372.sol";
+import {Governor, IGovernor} from "openzeppelin-contracts/governance/Governor.sol";
+import {GovernorSettings} from "openzeppelin-contracts/governance/extensions/GovernorSettings.sol";
+import {GovernorCountingSimple} from "openzeppelin-contracts/governance/extensions/GovernorCountingSimple.sol";
+import {GovernorVotes, IVotes} from "openzeppelin-contracts/governance/extensions/GovernorVotes.sol";
+import {GovernorVotesQuorumFraction} from "openzeppelin-contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
+import {IERC6372} from "openzeppelin-contracts/interfaces/IERC6372.sol";
 
 import {ExtendedGovernorBase} from "./ExtendedGovernorBase.sol";
 

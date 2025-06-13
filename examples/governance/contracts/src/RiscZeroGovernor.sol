@@ -16,16 +16,16 @@
 
 pragma solidity ^0.8.9;
 
-import {Governor, IGovernor} from "openzeppelin/contracts/governance/Governor.sol";
-import {GovernorSettings} from "openzeppelin/contracts/governance/extensions/GovernorSettings.sol";
-import {GovernorVotes, IVotes} from "openzeppelin/contracts/governance/extensions/GovernorVotes.sol";
-import {GovernorVotesQuorumFraction} from "openzeppelin/contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
+import {Governor, IGovernor} from "openzeppelin-contracts/governance/Governor.sol";
+import {GovernorSettings} from "openzeppelin-contracts/governance/extensions/GovernorSettings.sol";
+import {GovernorVotes, IVotes} from "openzeppelin-contracts/governance/extensions/GovernorVotes.sol";
+import {GovernorVotesQuorumFraction} from "openzeppelin-contracts/governance/extensions/GovernorVotesQuorumFraction.sol";
 
 import {RiscZeroGovernorCounting} from "./RiscZeroGovernorCounting.sol";
 import {ExtendedGovernorBase} from "./ExtendedGovernorBase.sol";
 import {IRiscZeroVerifier} from "risc0/IRiscZeroVerifier.sol";
 
-import {IERC6372} from "openzeppelin/contracts/interfaces/IERC6372.sol";
+import {IERC6372} from "openzeppelin-contracts/interfaces/IERC6372.sol";
 
 /// @custom:security-contact security@risczero.com
 contract RiscZeroGovernor is

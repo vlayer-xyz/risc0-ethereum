@@ -16,7 +16,7 @@
 
 pragma solidity ^0.8.9;
 
-import {Governor} from "openzeppelin/contracts/governance/Governor.sol";
+import {Governor} from "openzeppelin-contracts/governance/Governor.sol";
 
 /**
  * @dev Implementation of vote counting for the BonsaiGovernor, based on GovernorCountingSimple.

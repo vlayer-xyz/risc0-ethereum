@@ -22,7 +22,7 @@ import {RiscZeroCheats} from "risc0/test/RiscZeroCheats.sol";
 import {ImageID} from "../src/ImageID.sol";
 import {ControlID, RiscZeroGroth16Verifier} from "risc0/groth16/RiscZeroGroth16Verifier.sol";
 import {IRiscZeroVerifier} from "risc0/IRiscZeroVerifier.sol";
-import {IVotes} from "openzeppelin/contracts/governance/utils/IVotes.sol";
+import {IVotes} from "openzeppelin-contracts/governance/utils/IVotes.sol";
 
 import {RiscZeroGovernor} from "../src/RiscZeroGovernor.sol";
 import {VoteToken} from "../src/VoteToken.sol";
