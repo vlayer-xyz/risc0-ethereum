@@ -20,7 +20,7 @@ import {GovernorTestBase} from "./GovernorTestBase.sol";
 import {console2} from "forge-std/console2.sol";
 import {BaselineGovernor} from "../src/BaselineGovernor.sol";
 import {VoteToken} from "../src/VoteToken.sol";
-import {IGovernor} from "openzeppelin/contracts/governance/IGovernor.sol";
+import {IGovernor} from "openzeppelin-contracts/governance/IGovernor.sol";
 
 contract BaselineGovernorTest is Test, GovernorTestBase {
     function setUp() public override {

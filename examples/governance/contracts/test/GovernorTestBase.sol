@@ -20,7 +20,7 @@ import {console2} from "forge-std/console2.sol";
 import {BaselineGovernor} from "../src/BaselineGovernor.sol";
 import {RiscZeroGovernor} from "../src/RiscZeroGovernor.sol";
 import {VoteToken} from "../src/VoteToken.sol";
-import {IGovernor} from "openzeppelin/contracts/governance/IGovernor.sol";
+import {IGovernor} from "openzeppelin-contracts/governance/IGovernor.sol";
 import {ImageID} from "../src/ImageID.sol";
 import {RiscZeroMockVerifier, Receipt as VerifierReceipt} from "risc0/test/RiscZeroMockVerifier.sol";
 import {IRiscZeroVerifier} from "risc0/IRiscZeroVerifier.sol";
