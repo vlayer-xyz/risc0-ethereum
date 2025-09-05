@@ -18,8 +18,8 @@ pragma solidity ^0.8.9;
 
 import {Test} from "forge-std/Test.sol";
 import {console2} from "forge-std/console2.sol";
-import {Pausable} from "openzeppelin/contracts/utils/Pausable.sol";
-import {TimelockController} from "openzeppelin/contracts/governance/TimelockController.sol";
+import {Pausable} from "openzeppelin-contracts/utils/Pausable.sol";
+import {TimelockController} from "openzeppelin-contracts/governance/TimelockController.sol";
 import {RiscZeroVerifierRouter} from "../src/RiscZeroVerifierRouter.sol";
 import {
     IRiscZeroVerifier, Receipt as RiscZeroReceipt, ReceiptClaim, ReceiptClaimLib
